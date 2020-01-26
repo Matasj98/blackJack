@@ -1,0 +1,14 @@
+.Card {
+  text-align: center;
+}
+
+.CardBox {
+  display: flex;
+}
+
+.CardSize {
+  height: 100px;
+  width: 70px;
+  border: solid 1px black;
+  margin: 10px;
+}

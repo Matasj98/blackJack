@@ -1,0 +1,13 @@
+.Button button {
+  width: 100px;
+  padding: 10px 0;
+  margin: 10px;
+  border: solid 1px black;
+  background-color: white;
+  cursor: pointer;
+}
+
+.Button button:hover {
+  transition: 0.3s all;
+  background-color: gray;
+}
