@@ -3,7 +3,7 @@ import { setDeck as setDeckAction } from "../Actions/action";
 
 export const setDeck = () => (disptach, getState) => {
   let cards = [];
-  const deckCopy = [...getState().gameData.deck];
+  const deckCopy = [...getState().deckData.deck];
   for (let i = 0; i < 4; i++) {
     const random = Math.floor(Math.random() * deckCopy.length);
     cards.push(deckCopy[random]);

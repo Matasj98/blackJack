@@ -1,12 +1,14 @@
 import { combineReducers } from "redux";
-import { gameData } from "./gameData";
-
-// export const allReducer = combineReducers({
-//     gameData
-// })
+import { deckData } from "./deckData";
+import { enemyData } from "./enemyData";
+import { playerData } from "./playerData";
+import { winner } from "./winner";
 
 const appReducer = combineReducers({
-  gameData
+  deckData,
+  enemyData,
+  playerData,
+  winner
 });
 
 export const allReducer = (state, action) => {

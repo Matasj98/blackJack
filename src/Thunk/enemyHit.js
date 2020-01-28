@@ -3,8 +3,8 @@ import { setEnemyDeck, setDeck as setDeckAction } from "../Actions/action";
 
 export const enemyHit = () => (dispatch, getState) => {
   let randomChoice = Math.random() >= 0.5 ? 1 : 0;
-  const copyDeck = [...getState().gameData.deck];
-  const copyEnemyDeck = [...getState().gameData.enemyDeck];
+  const copyDeck = [...getState().deckData.deck];
+  const copyEnemyDeck = [...getState().enemyData.enemyDeck];
   while (randomChoice !== 1) {
     const randomCard = Math.floor(Math.random() * copyDeck.length);
     copyDeck.splice(randomCard, 1);

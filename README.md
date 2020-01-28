@@ -1,1 +1,1 @@
-BlackJack game
+BlackJack game - React, Redux, couple tests

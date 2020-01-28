@@ -58,9 +58,9 @@ class App extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  playerDeck: state.gameData.playerDeck,
-  enemyDeck: state.gameData.enemyDeck,
-  winner: state.gameData.winner
+  playerDeck: state.playerData.playerDeck,
+  enemyDeck: state.enemyData.enemyDeck,
+  winner: state.winner.winner
 });
 
 const mapDispatchToProps = dispatch => ({
